@@ -17,10 +17,12 @@ worker_timeout 3600 if ENV.fetch("RAILS_ENV", "development") == "development"
 #
 
 #EC2デプロイのためコメントアウト
-#port ENV.fetch("PORT") { 3000 }
+#ローカルで見るならコメントアウト外す
+port ENV.fetch("PORT") { 3000 }
 
 #EC2デプロイのため追記 planner05として
-bind "unix:///var/www/planner05/tmp/sockets/puma.sock"
+#ローカルで見るならコメントアウトする
+#bind "unix:///var/www/planner05/tmp/sockets/puma.sock"
 
 
 # Specifies the `environment` that Puma will run in.
