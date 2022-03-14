@@ -16,13 +16,11 @@ worker_timeout 3600 if ENV.fetch("RAILS_ENV", "development") == "development"
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 #
 
-#EC2デプロイのためコメントアウト
-#ローカルで見るならコメントアウト外す
-port ENV.fetch("PORT") { 3000 }
-
-#EC2デプロイのため追記 planner05として
-#ローカルで見るならコメントアウトする
-#bind "unix:///var/www/planner05/tmp/sockets/puma.sock"
+#EC2デプロイ
+#ローカルで使用↓
+# port ENV.fetch("PORT") { 3000 }
+#本番環境で使用↓
+bind "unix:///var/www/planner05/tmp/sockets/puma.sock"
 
 
 # Specifies the `environment` that Puma will run in.
