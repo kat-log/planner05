@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'items/search'
   get 'result/result_page'
   #get 'home/top'
   root 'home#top'
