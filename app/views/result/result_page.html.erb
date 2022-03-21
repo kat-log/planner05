@@ -27,3 +27,10 @@
     <% end %>
   </tbody>
 </table>
+
+
+  <% ranking_by_age = RakutenWebService::Ichiba::Item.ranking(:age => 40, :sex => 1) # 30代男性 のランキングTOP 30 %>
+  <% ranking_by_age.each do |ranking| %>
+    <%= ranking.rank %>
+    <%= image_tag ranking['mediumImageUrls'][0] %>
+  <% end %>
