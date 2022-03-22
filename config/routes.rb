@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'choose/choose_page'
   get 'result/result_page'
   #get 'home/top'
   root 'home#top'
