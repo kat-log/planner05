@@ -7,16 +7,16 @@
   <%= submit_tag "検索" %>
 <% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>商品名</th>
-      <th>価格</th>
-      <th>画像</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% if @items.present? %>
+<% if @items.present? %>
+  <table>
+    <thead>
+      <tr>
+        <th>商品名</th>
+        <th>価格</th>
+        <th>画像</th>
+      </tr>
+    </thead>
+    <tbody>
       <% @items.each do |item| %>
         <tr>
           <td><%= link_to item.name, "#{item.url}" %></td>
@@ -24,13 +24,13 @@
           <td><%= image_tag item['smallImageUrls'][0] %></td>
         </tr>
       <% end %>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+<% end %>
 
 
   <% @ranking_by_age.each do |ranking| %>
     <%= ranking.rank %>
-    <%= image_tag ranking['mediumImageUrls'][0] %>
+    <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url %>
     <%= break if ranking.rank ==3 %>
   <% end %>
