@@ -2,3 +2,8 @@
 <p>相手はどんな方ですか？</p>
 <p>年代プルダウン（将来機能）</p>
 <p>性別プルダウン</p>
+<%= form_tag :result_result_page, method: :get do  %>
+  <%= label_tag :keyword, 'キーワード検索' %>
+  <%= text_field_tag 'keyword', params[:keyword] %>
+  <%= submit_tag "検索" %>
+<% end %>
