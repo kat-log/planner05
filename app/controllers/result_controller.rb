@@ -1,4 +1,6 @@
 class ResultController < ApplicationController
+
+  # プルダウンから受け取った値を元に楽天から結果を取得
   def result_page
     @sex = params[:sex]
     if params[:keyword]

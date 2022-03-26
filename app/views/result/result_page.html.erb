@@ -29,7 +29,7 @@
 <% end %>
 
 
-
+<!-- 楽天ランキングよりトップ3表示 -->
 <% @ranking_by_age.each do |ranking| %>
   <%= ranking.rank %>
   <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url %>
