@@ -29,8 +29,9 @@
 <% end %>
 
 
-  <% @ranking_by_age.each do |ranking| %>
-    <%= ranking.rank %>
-    <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url %>
-    <%= break if ranking.rank ==3 %>
-  <% end %>
+
+<% @ranking_by_age.each do |ranking| %>
+  <%= ranking.rank %>
+  <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url %>
+  <%= break if ranking.rank ==3 %>
+<% end %>

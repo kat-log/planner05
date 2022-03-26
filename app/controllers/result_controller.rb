@@ -1,6 +1,6 @@
 class ResultController < ApplicationController
   def result_page
-    @sex = 1
+    @sex = params[:sex]
     if params[:keyword]
       @items = RakutenWebService::Ichiba::Item.search(keyword: params[:keyword], hits: 3)
     end

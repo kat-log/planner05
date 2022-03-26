@@ -7,3 +7,11 @@
   <%= text_field_tag 'keyword', params[:keyword] %>
   <%= submit_tag "検索" %>
 <% end %>
+
+<%= form_with url: "/result/result_page", local: true, method: :post do |f| %>
+
+  # プルダウンを実装するためのコード
+  <%= f.select :sex, [["男性", "0"], ["女性", "1"]], include_blank: "選択して下さい" %>
+
+  <%= f.submit '送信'%>
+<% end %>
