@@ -32,6 +32,6 @@
 <!-- 楽天ランキングよりトップ3表示 -->
 <% @ranking_by_age.each do |ranking| %>
   <%= ranking.rank %>
-  <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url %>
+  <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url, target: :_blank, rel: "noopener noreferrer" %>
   <%= break if ranking.rank ==3 %>
 <% end %>
