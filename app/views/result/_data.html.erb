@@ -1,0 +1,14 @@
+<div class="article-box">
+    <%= link_to news.url do %>
+      <% if news.urlToImage.present? %>
+        <%= image_tag(news.urlToImage, class: "item-img") %>
+      <% else %>
+        <%= image_tag("dammy-cover.png", class: "item-img") %> 
+      <% end %>
+      <div class="article-body">
+        <p class="article-title-name">
+          <%= news.title.truncate(30) %>
+        </p>
+      </div>
+    <% end %>
+  </div>

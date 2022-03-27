@@ -50,9 +50,12 @@ gem "bootsnap", require: false
 
 #自分で追加
 #環境変数
-gem 'dotenv-rails'
+gem "dotenv-rails"
 #楽天API
-gem 'rakuten_web_service'
+gem "rakuten_web_service"
+#NEWS API
+gem "news-api"
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
