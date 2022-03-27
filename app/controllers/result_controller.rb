@@ -9,6 +9,6 @@ class ResultController < ApplicationController
     # ニュースを取得
     require 'news-api'
     news = News.new(ENV['NEWS_API_KEY'])
-    @news = news.get_top_headlines(country: 'jp')
+    @news = news.get_top_headlines(country: 'jp', pageSize: 3)
   end
 end
