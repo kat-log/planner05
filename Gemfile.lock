@@ -135,6 +135,7 @@ GEM
       digest
       net-protocol
       timeout
+    news-api (0.2.0)
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-darwin)
       racc (~> 1.4)
@@ -227,6 +228,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)
+  news-api
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.2)
   rakuten_web_service

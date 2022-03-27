@@ -6,3 +6,6 @@
   <%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url, target: :_blank, rel: "noopener noreferrer" %>
   <%= break if ranking.rank ==3 %>
 <% end %>
+
+<!--ニュース表示 -->
+<p>Powered by <%= link_to "https://newsapi.org", target: :_blank, rel: "noopener noreferrer" do %>　News API　<% end %></p>
