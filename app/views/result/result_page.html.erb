@@ -8,4 +8,7 @@
 <% end %>
 
 <!--ニュース表示 -->
+
+<%= render partial: "data", collection: @news, as: "news" %>
+
 <p>Powered by <%= link_to "https://newsapi.org", target: :_blank, rel: "noopener noreferrer" do %>　News API　<% end %></p>
