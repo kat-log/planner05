@@ -1,5 +1,5 @@
 <div class="article-box">
-    <%= link_to news.url do %>
+    <%= link_to news.url, target: :_blank, rel: "noopener noreferrer" do %>
       <% if news.urlToImage.present? %>
         <%= image_tag(news.urlToImage, class: "item-img") %>
       <% else %>
