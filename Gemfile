@@ -55,7 +55,8 @@ gem "dotenv-rails"
 gem "rakuten_web_service"
 #NEWS API
 gem "news-api"
-
+#Tailwind CSS
+gem 'cssbundling-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
