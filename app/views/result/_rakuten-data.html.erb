@@ -4,15 +4,17 @@
   <%#= break if ranking.rank ==3 %>
 <%# end %>
 
-<% @ranking_by_age.each do |ranking| %>
-  <table class="table-fixed">
-    <tbody>
-      <tr>
-        <td><%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url, target: :_blank, rel: "noopener noreferrer" %></td>
-        <td><%= ranking.catchcopy %></td>
+<table class="table-fixed border-separate border ">
+  <tbody>
+    <tr>
+      <% @ranking_by_age.each do |ranking| %>
+      <td><%= link_to image_tag(ranking['mediumImageUrls'][0]), ranking.url, target: :_blank, rel: "noopener noreferrer" %></td>
+      <%= break if ranking.rank ==3 %>
+      <% end %>
       </tr>
-    </tbody>
-  </table>
-  <%= break if ranking.rank ==3 %>
-<% end %>
+      <tr>
+        <td><%#= ranking.catchcopy %></td>
+      </tr>
+  </tbody>
+</table>
 
