@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 .btn {
-  @apply drop-shadow-xl bg-blue-500 hover:bg-blue-400 text-gray-100 font-bold py-3 px-4 border-blue-700 rounded-full;
+  @apply m-2 p-9 drop-shadow-2xl bg-blue-500 hover:bg-blue-400 text-gray-100 font-bold py-3 border-blue-700 rounded-full;
+}
+
+.all-page {
+  @apply text-center;
+}
+
+.head1 {
+  @apply p-9 font-extrabold text-8xl text-gray-800;
 }
 
 .btn-t {
