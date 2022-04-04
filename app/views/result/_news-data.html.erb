@@ -1,14 +1,14 @@
-<div class="article-box">
-    <%= link_to news.url, target: :_blank, rel: "noopener noreferrer" do %>
-      <% if news.urlToImage.present? %>
-        <%= image_tag(news.urlToImage, class: "item-img") %>
-      <% else %>
-        <%= image_tag("dammy-cover.png", class: "item-img") %> 
+<div class="md:flex m-9">
+    <div class="m-9 p-5 basis-1/3 bg-gradient-to-b from-sky-300 to-sky-500 rounded-xl text-white">
+      <%= link_to news.url, target: :_blank, rel: "noopener noreferrer" do %>
+        <div class="m-5 rounded-xl">
+          <% if news.urlToImage.present? %>
+            <%= image_tag(news.urlToImage, class: "item-img") %>
+          <% else %>
+            <%= image_tag("dammy-cover.png", class: "item-img") %> 
+          <% end %>
+        </div>
+        <%= news.title.truncate(30) %>
       <% end %>
-      <div class="article-body">
-        <p class="article-title-name">
-          <%= news.title.truncate(30) %>
-        </p>
-      </div>
-    <% end %>
-  </div>
+    </div>
+</div>
