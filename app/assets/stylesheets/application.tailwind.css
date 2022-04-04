@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-  @apply m-2 p-9 drop-shadow-2xl bg-blue-500 hover:bg-blue-400 text-gray-100 font-bold py-3 border-blue-700 rounded-full;
+  @apply m-2 p-9 drop-shadow-2xl bg-emerald-500 hover:bg-emerald-400 text-gray-100 font-bold py-3 border-emerald-700 rounded-full transition;
 }
 
 .all-page {
@@ -15,7 +15,7 @@
 }
 
 .btn-t {
-  @apply bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-400;
+  @apply text-emerald-500 border border-emerald-500 hover:bg-emerald-500 hover:text-white active:bg-emerald-600 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150;
 }
 
 @layer components {
