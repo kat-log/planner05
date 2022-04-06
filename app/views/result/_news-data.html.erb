@@ -1,14 +1,24 @@
-<div class="md:flex m-9">
-    <div class="m-9 p-5 basis-1/3 bg-gradient-to-b from-sky-300 to-sky-500 rounded-xl text-white">
-      <%= link_to news.url, target: :_blank, rel: "noopener noreferrer" do %>
-        <div class="m-5">
-          <% if news.urlToImage.present? %>
-            <%= image_tag(news.urlToImage, class: "rounded-xl") %>
-          <% else %>
-            <%= image_tag("dammy-cover.png", class: "rounded-xl") %> 
-          <% end %>
-        </div>
-        <%= news.title.truncate(30) %>
-      <% end %>
+
+
+
+<div class="md:flex flex-row m-9">
+  <div class="m-9 p-5 basis-1/3 bg-gradient-to-b from-sky-300 to-sky-500 rounded-xl text-white">
+
+    <% @news.each do |news| %>
+
+  <%= link_to news.url, target: :_blank, rel: "noopener noreferrer" do %>
+      <div class="m-5">
+        <% if news.urlToImage.present? %>
+          <%= image_tag(news.urlToImage, class: "rounded-xl") %>
+        <% else %>
+          <%= image_tag("dammy-cover.png", class: "rounded-xl") %> 
+        <% end %>
+      </div>
+      <%= news.title.truncate(30) %>
+      <p>実験中</p>
+    <% end %>
+
+    <% end %>
+
     </div>
 </div>
