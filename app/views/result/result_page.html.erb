@@ -5,6 +5,8 @@
 <%= render partial: "rakuten-data" %>
 
 <!--ニュース表示 -->
-<%= render partial: "news-data", collection: @news, as: "news" %>
+<div class=" md:flex flex-row m-9">
+  <%= render partial: "news-data", collection: @news, as: "news" %>
+</div>
 
 <p>Powered by <%= link_to "https://newsapi.org", target: :_blank, rel: "noopener noreferrer" do %>　News API　<% end %></p>
