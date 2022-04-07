@@ -1,10 +1,15 @@
-<h1>結果ページ</h1>
-<p>結果を表示</p>
+<div class="all-page">
+  <h1 class="head1">結果ページ</h1>
 
-<!-- 楽天ランキング表示 -->
-<%= render partial: "rakuten-data" %>
-
-<!--ニュース表示 -->
-<%= render partial: "news-data", collection: @news, as: "news" %>
-
-<p>Powered by <%= link_to "https://newsapi.org", target: :_blank, rel: "noopener noreferrer" do %>　News API　<% end %></p>
+  <!-- 楽天ランキング表示 -->
+  <p class=" text-2xl font-bold">サプライズにプレゼントは最適です。こちらはいかがですか？😊</p>
+  <%= render partial: "rakuten-data" %>
+  
+  <!--ニュース表示 -->
+  <p class=" text-2xl font-bold">お次は最新ニュースから話題のご提案です。こちらはいかがですか？😊</p>
+  <div class=" md:flex flex-row m-9">
+    <%= render partial: "news-data", collection: @news, as: "news" %>
+  </div>
+  
+  <p>Powered by <%= link_to "https://newsapi.org", target: :_blank, rel: "noopener noreferrer" do %>　News API　<% end %></p>
+</div>

@@ -1,8 +1,13 @@
-<h1>設定ページ</h1>
-<p>相手はどんな方ですか？</p>
-<!-- プルダウン -->
-<%= form_with url: "/result/result_page", local: true, method: :post do |f| %>
-  <%= f.select :sex, [["男性", "0"], ["女性", "1"]] %>
-  <%= f.select :age, [["10代", "10"], ["20代", "20"], ["30代", "30"], ["40代", "40"], ["50代以上", "50"]] %>
-  <%= f.submit '送信'%>
-<% end %>
+<div class="all-page">
+  <h1 class="head1">ご提案の前に</h1>
+    <%= image_tag "choose.png", class: "m-auto" %>
+  <p class="p-9 text-2xl font-bold">喜ばせたい相手について少し教えて下さい</p>
+  <!-- プルダウン -->
+  <%= form_with url: "/result/result_page", local: true, method: :post do |f| %>
+    <div class="container mx-auto m-3 text-2xl w-36 bg-white shadow rounded-full border"><%= f.select :sex, [["男性", "0"], ["女性", "1"]] %></div>
+    <div class="container mx-auto m-3 text-2xl w-36 bg-white shadow rounded-full border"><%= f.select :age, [["10代", "10"], ["20代", "20"], ["30代", "30"], ["40代", "40"], ["50代以上", "50"]] %></div>
+    <br />
+    <%= f.submit "プランを見る😁", { class: " btn " }%>
+  <% end %>
+</div> 
+
