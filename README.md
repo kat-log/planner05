@@ -47,21 +47,18 @@
 
 ## 使用技術
 
-* Ruby version
+### バックエンド関係
 
-* System dependencies
+- Ruby（3.1.0）
+- Ruby on Rails（7.0.2.2）
+- MySQL（8.0.28）
 
-* Configuration
+### フロントエンド関係
 
-* Database creation
+- Tailwind CSS
 
-* Database initialization
+### インフラ関係
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# planner05
+- AWS
+  - EC2
+  - RDS
