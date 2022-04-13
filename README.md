@@ -4,7 +4,6 @@
 
 ![landing](https://user-images.githubusercontent.com/83802430/162829253-839f1b27-3c23-4d2f-8b7e-e704eb1a2f3f.jpeg)
 
-
 ## URL
 
 <http://52.192.238.88/>
