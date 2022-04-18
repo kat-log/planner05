@@ -6,7 +6,7 @@
 
 ## URL
 
-<http://52.192.238.88/>
+<http://www.planner-app-05.com/>
 
 ## **3行でアプリ紹介**
 
@@ -69,4 +69,4 @@
 
 - AWS
   - EC2
-  - RDS
+  - Route 53
