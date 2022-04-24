@@ -11,7 +11,11 @@
 }
 
 .head1 {
-  @apply p-9 font-extrabold text-8xl text-gray-800;
+  @apply p-9 font-extrabold text-4xl md:text-8xl text-gray-800;
+}
+
+.text {
+  @apply text-gray-800 text-xl md:text-2xl font-bold;
 }
 
 .btn-t {
