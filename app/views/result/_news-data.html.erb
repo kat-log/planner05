@@ -4,7 +4,7 @@
       <% if news.urlToImage.present? %>
         <%= image_tag(news.urlToImage, class: "rounded-xl hover:opacity-75 container border border-blue-500") %>
       <% else %>
-        <%= image_tag("dammy-cover.png", class: "rounded-xl hover:opacity-75 container border border-blue-500") %> 
+        <%= image_tag("no_image.png", class: "rounded-xl hover:opacity-75 container border border-blue-500") %> 
       <% end %>
     </div>
     <%= news.title.truncate(30) %>
