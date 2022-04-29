@@ -14,8 +14,16 @@
   @apply p-9 font-extrabold text-4xl md:text-8xl text-gray-800;
 }
 
+.head2 {
+  @apply mt-9 p-9 font-extrabold text-2xl md:text-4xl text-gray-800;
+}
+
 .text {
   @apply text-gray-800 text-xl md:text-2xl font-bold mx-5;
+}
+
+.link-text {
+  @apply text-gray-800 hover:text-slate-500 text-xl md:text-2xl font-bold mx-5;
 }
 
 .btn-t {
