@@ -23,7 +23,7 @@
 }
 
 .link-text {
-  @apply text-gray-800 hover:text-slate-600 text-xl md:text-2xl font-bold mx-5;
+  @apply text-gray-800 hover:text-slate-500 text-xl md:text-2xl font-bold mx-5;
 }
 
 .btn-t {
