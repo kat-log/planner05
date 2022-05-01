@@ -5,7 +5,9 @@
 ![landing](https://user-images.githubusercontent.com/83802430/162829253-839f1b27-3c23-4d2f-8b7e-e704eb1a2f3f.jpeg)
 
 ## URL
-[link]([URL](https://www.planner-app-05.com/)){:target="_blank"}
+
+[プランナー](https://www.planner-app-05.com/){:target="_blank"}
+[link](URL){:target="_blank"}
 <https://www.planner-app-05.com/>
 
 ## **3行でアプリ紹介**
