@@ -73,5 +73,3 @@
 - AWS
   - EC2
   - Route 53
-  - ALB
-  - AWS Certificate Manager
