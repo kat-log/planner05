@@ -6,9 +6,6 @@
 
 ## URL
 
-[プランナー](https://www.planner-app-05.com/){:target="_blank"}
-
-[link](URL){:target="_blank"}
 <https://www.planner-app-05.com/>
 
 ## **3行でアプリ紹介**
