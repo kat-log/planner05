@@ -6,7 +6,7 @@
 
 ## URL
 
-<http://www.planner-app-05.com/>
+<https://www.planner-app-05.com/>
 
 ## **3行でアプリ紹介**
 
