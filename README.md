@@ -6,7 +6,7 @@
 
 ## URL
 
-<http://www.planner-app-05.com/>
+<https://www.planner-app-05.com/>
 
 ## **3行でアプリ紹介**
 
@@ -51,7 +51,7 @@
 - APIを使うスキルの習得ができる
 - 何より、ワクワクしながら作成していける
 
-というメリットがあると思い、作成しました。
+と思い作成しました。
 
 ## 使用技術
 
@@ -70,3 +70,5 @@
 - AWS
   - EC2
   - Route 53
+  - ALB
+  - AWS Certificate Manager
