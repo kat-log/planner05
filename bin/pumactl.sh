@@ -4,7 +4,7 @@ current_dir=`(cd $(dirname $0); pwd)`
 rails_root=`(cd "$current_dir/../"; pwd)`
 log_file="$rails_root/log/puma.log"
 pid_dir="${rails_root}/tmp/pids"
-pid_file="${pid_dir}/puma.pid"
+pid_file="${pid_dir}/server.pid"
 
 start() {
   echo "starting puma"
