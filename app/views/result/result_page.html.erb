@@ -6,13 +6,13 @@
   <p class="text">サプライズにプレゼントは最適です。こちらはいかがですか？😊</p>
   <%= render partial: "rakuten-data" %>
   
-  <!--ニュース表示 -->
+  <!-- ニュース表示 -->
   <p class="text">お次は最新ニュースから話題のご提案です。こちらはいかがですか？😊</p>
   <div class=" md:flex flex-row m-9">
     <%= render partial: "news-data", collection: @news, as: "news" %>
   </div>
 
-  <!--YouTube動画表示 -->
+  <!-- YouTube動画表示 -->
   <% @youtube_data.items.each do |item| %>
     <% snippet = item.snippet %>
     <p><%= snippet.title %></p>
