@@ -58,8 +58,8 @@ gem "news-api"
 #Tailwind CSS
 gem 'cssbundling-rails'
 #YouTube API
-gem 'google-api-client' #deprecatedなので使用やめる
-# gem 'google-apis-youtube_v3', '~> 0.4.0'
+# gem 'google-api-client' #deprecatedなので使用やめる
+gem 'google-apis-youtube_v3', '~> 0.4.0'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

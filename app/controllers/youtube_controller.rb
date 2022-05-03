@@ -34,6 +34,6 @@ class YoutubeController < ApplicationController
 
     response = youtube.list_channels(:snippet, **options)
 
-    @channel_title = response.items
+    @channel_title = response.items.first
   end
 end
