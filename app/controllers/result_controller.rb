@@ -23,7 +23,7 @@ class ResultController < ApplicationController
 
     response = youtube.list_channels(:snippet, id: options)
 
-    @channel_title = response[:items][0][:snippet][:title]
+    @channel_title = response.items.first
 
   end
 end
