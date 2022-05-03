@@ -15,25 +15,25 @@ class YoutubeController < ApplicationController
       published_after: after.iso8601,
       published_before: before.iso8601
     }
-    service.list_searches(:snippet, opt)
+    service.list_searches(:snippet, **opt)
   end
 
-  # def index
-  #   @youtube_data = find_videos('明日香ちゃんねる')
-  # end
   def index
-    #YouTube動画を取得
-    require 'google/apis/youtube_v3'
-
-    youtube = Google::Apis::YoutubeV3::YouTubeService.new
-    youtube.key = Rails.application.credentials.google[:api_key]
-
-    options = {
-      :id => 'UCPyNsNSTUtywkekbDdCA_8Q' #YouTubeチャンネルのIDを指定
-    }
-
-    response = youtube.list_channels(:snippet, **options)
-
-    @channel_title = response.items.first
+    @youtube_data = find_videos('明日香ちゃんねる')
   end
+  # def index
+  #   #YouTube動画を取得
+  #   require 'google/apis/youtube_v3'
+
+  #   youtube = Google::Apis::YoutubeV3::YouTubeService.new
+  #   youtube.key = Rails.application.credentials.google[:api_key]
+
+  #   options = {
+  #     :id => 'UCPyNsNSTUtywkekbDdCA_8Q' #YouTubeチャンネルのIDを指定
+  #   }
+
+  #   response = youtube.list_channels(:snippet, **options)
+
+  #   @channel_title = response.items.first
+  # end
 end
