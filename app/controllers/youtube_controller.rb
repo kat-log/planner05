@@ -32,7 +32,7 @@ class YoutubeController < ApplicationController
       :id => 'UCPyNsNSTUtywkekbDdCA_8Q' #YouTubeチャンネルのIDを指定
     }
 
-    response = youtube.list_channels(:snippet, id: options)
+    response = youtube.list_channels(:snippet, **options)
 
     @channel_title = response.items
   end
