@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'youtube/index'
   root 'home#top'
   get 'home/about'
   get 'choose/choose_page'
