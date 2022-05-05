@@ -64,6 +64,7 @@
 ### フロントエンド関係
 
 - Tailwind CSS
+- Flowrift
 
 ### インフラ関係
 
@@ -78,3 +79,7 @@
 - 楽天ランキングAPI
 - NEWS API
 - YouTube API
+
+### イラスト
+
+- Loose Drawing
