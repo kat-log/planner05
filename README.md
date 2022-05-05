@@ -72,3 +72,9 @@
   - Route 53
   - ALB
   - AWS Certificate Manager
+
+### API
+
+- 楽天ランキングAPI
+- NEWS API
+- YouTube API
