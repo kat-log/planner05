@@ -30,4 +30,14 @@ class ResultController < ApplicationController
     # YouTube動画を取得
     @youtube_data = find_videos('インディアンス')
   end
+
+  def pull_rakuten_item
+  end
+
+  def pull_news
+  end
+
+  def pull_youtube_video
+  end
+
 end
