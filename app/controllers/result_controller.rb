@@ -20,7 +20,7 @@ class ResultController < ApplicationController
   end
 
   def pull_youtube(keyword, after: 1.months.ago, before: Time.now)
-    # YouTube動画を取得
+    # 引数のキーワードを元にYouTube動画を取得
     service = Google::Apis::YoutubeV3::YouTubeService.new
     service.key = Rails.application.credentials.google[:api_key]
 
