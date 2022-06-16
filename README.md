@@ -74,7 +74,8 @@
   - Route 53
   - ALB
   - AWS Certificate Manager
-- Nginx
+- Puma（アプリケーションサーバー）
+- Nginx（WEBサーバー）
 
 ### API
 
