@@ -74,6 +74,7 @@
   - Route 53
   - ALB
   - AWS Certificate Manager
+- Nginx
 
 ### API
 
