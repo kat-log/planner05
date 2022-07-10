@@ -11,7 +11,7 @@
 
     <!-- グーグルアナリティクス -->
     <% if Rails.env.production? %>
-      <%= render 'layouts/google_analytics' %>
+      <%= render partial: "layouts/google_analytics" %>
     <% end %>
 
     </head>
