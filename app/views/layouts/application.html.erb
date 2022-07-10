@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- グーグルアナリティクス -->
+    <% if Rails.env.production? %>
+      <%= render partial: "layouts/google_analytics" %>
+    <% end %>
+
     <%= favicon_link_tag('favicon.ico') %>
     <title>Planner05</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,11 +13,6 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-
-    <!-- グーグルアナリティクス -->
-    <% if Rails.env.production? %>
-      <%= render partial: "layouts/google_analytics" %>
-    <% end %>
 
     </head>
 
